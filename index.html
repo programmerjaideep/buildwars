@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सरकारी योजना पात्रता - Government Scheme Eligibility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="assets\Government_of_India_logo.svg" alt="Government Logo" class="gov-logo">
+                <div class="logo-text">
+                    <h1>National Empowerment Scheme</h1>
+                    <p>Government of India Initiative</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="eligibility.html">Eligibility</a>
+                <a href="contact.html">Contact</a>
+                <button class="login-btn">Login</button>
+                <div class="language-selector">
+                    <select id="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="hi">हिंदी</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Government Schemes Portal</h1>
+                <p>Access information about various government schemes and welfare programs designed to support citizens across different sectors.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn primary-btn">Learn More</a>
+                    <a href="eligibility.html" class="btn secondary-btn">Check Eligibility</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets\Government_of_India_logo.svg" alt="Government of India Emblem">
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2>₹50,000</h2>
+                <p data-lang="financialAssistance">Financial Assistance</p>
+            </div>
+            <div class="stat-card">
+                <h2>5M+</h2>
+                <p data-lang="beneficiaries">Beneficiaries</p>
+            </div>
+            <div class="stat-card">
+                <h2>28</h2>
+                <p data-lang="statesCovered">States Covered</p>
+            </div>
+            <div class="stat-card">
+                <h2>500+</h2>
+                <p data-lang="trainingCenters">Training Centers</p>
+            </div>
+        </section>
+
+        <section class="schemes">
+            <div class="section-header">
+                <h2 data-lang="schemesTitle">सरकारी योजनाएं</h2>
+                <p data-lang="schemesDesc">भारत सरकार द्वारा संचालित प्रमुख कल्याणकारी योजनाएं</p>
+            </div>
+            
+            <div class="schemes-grid">
+                <div class="scheme-card" data-category="education">
+                    <div class="scheme-image">
+                        <img src="assets/education.jpeg" alt="Education Schemes">
+                    </div>
+                    <div class="scheme-content">
+                        <h3>Education Schemes</h3>
+                        <ul>
+                            <li>Post Matric Scholarship for SC/ST Students</li>
+                            <li>National Means-cum-Merit Scholarship</li>
+                            <li>Central Sector Scholarship for College Students</li>
+                            <li>PMGDISHA - Digital Literacy Program</li>
+                            <li>Beti Bachao Beti Padhao Scholarship</li>
+                        </ul>
+                        <a href="about.html#education" class="scheme-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="agriculture">
+                    <div class="scheme-image">
+                        <img src="assets/krishi.webp" alt="Agriculture Schemes">
+                    </div>
+                    <div class="scheme-content">
+                        <h3>Agriculture Schemes</h3>
+                        <ul>
+                            <li>PM Kisan Samman Nidhi Yojana</li>
+                            <li>Kisan Credit Card Scheme</li>
+                            <li>PM Fasal Bima Yojana</li>
+                            <li>Soil Health Card Scheme</li>
+                            <li>National Agriculture Market (eNAM)</li>
+                        </ul>
+                        <a href="about.html#agriculture" class="scheme-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="health">
+                    <div class="scheme-image">
+                        <img src="assets/health.webp" alt="Health Schemes">
+                    </div>
+                    <div class="scheme-content">
+                        <h3>Health Schemes</h3>
+                        <ul>
+                            <li>Ayushman Bharat - PMJAY</li>
+                            <li>PM Matru Vandana Yojana</li>
+                            <li>National Health Mission</li>
+                            <li>Janani Suraksha Yojana</li>
+                            <li>Pradhan Mantri Bhartiya Janaushadhi Pariyojana</li>
+                        </ul>
+                        <a href="about.html#health" class="scheme-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="housing">
+                    <div class="scheme-image">
+                        <img src="assets/house.cms" alt="Housing Schemes">
+                    </div>
+                    <div class="scheme-content">
+                        <h3>Housing Schemes</h3>
+                        <ul>
+                            <li>Pradhan Mantri Awas Yojana (PMAY)</li>
+                            <li>Rural Housing Interest Subsidy Scheme</li>
+                            <li>Credit Linked Subsidy Scheme (CLSS)</li>
+                            <li>Affordable Housing in Partnership</li>
+                            <li>In-situ Slum Redevelopment</li>
+                        </ul>
+                        <a href="about.html#housing" class="scheme-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="employment">
+                    <div class="scheme-image">
+                        <img src="assets/IMAGE_1663400737.webp" alt="Employment Schemes">
+                    </div>
+                    <div class="scheme-content">
+                        <h3>Employment Schemes</h3>
+                        <ul>
+                            <li>PM Employment Generation Programme</li>
+                            <li>National Rural Employment Guarantee Act</li>
+                            <li>PM Mudra Yojana</li>
+                            <li>Startup India Initiative</li>
+                            <li>Skill India Mission</li>
+                        </ul>
+                        <a href="about.html#employment" class="scheme-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card" data-category="welfare">
+                    <div class="scheme-image">
+                        <img src="assets/Government_of_India_logo.svg" alt="Welfare Schemes">
+                    </div>
+                    <div class="scheme-content">
+                        <h3>Welfare Schemes</h3>
+                        <ul>
+                            <li>National Social Assistance Programme</li>
+                            <li>PM Ujjwala Yojana</li>
+                            <li>PM Garib Kalyan Yojana</li>
+                            <li>One Nation One Ration Card</li>
+                            <li>PM Jan Dhan Yojana</li>
+                        </ul>
+                        <a href="about.html#welfare" class="scheme-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>The National Empowerment Scheme is dedicated to financial inclusion and skill development of the country's citizens. Through this initiative, we are moving towards a self-reliant India.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="eligibility.html">Eligibility</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Government Portals</h3>
+                <ul>
+                    <li><a href="https://www.india.gov.in/" target="_blank">India Government Portal</a></li>
+                    <li><a href="https://www.mygov.in/" target="_blank">MyGov India</a></li>
+                    <li><a href="https://digitalindia.gov.in/" target="_blank">Digital India</a></li>
+                    <li><a href="https://uidai.gov.in/" target="_blank">Aadhaar</a></li>
+                    <li><a href="https://www.makeinindia.com/" target="_blank">Make in India</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>National Empowerment Scheme Office,</p>
+                <p>Shram Shakti Bhawan, New Delhi - 110001</p>
+                <p>Email: support@yojanaportal.com</p>
+                <p>Phone: 1800-XXX-XXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="assets/satyamev-jayate.png" alt="Satyamev Jayate" class="satyamev-logo">
+            </div>
+            <p>© 2024 Government Schemes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- फॉन्ट अवसम के लिए CDN लिंक -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</body>
+</html> 

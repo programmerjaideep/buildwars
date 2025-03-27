@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>योजना पात्रता जांचें - Government Scheme Eligibility</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="eligibility.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="assets/Government_of_India_logo.svg" alt="Government Logo" class="gov-logo">
+                <div class="logo-text">
+                    <h1>National Empowerment Scheme</h1>
+                    <p>Government of India Initiative</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="eligibility.html" class="active">Eligibility</a>
+                <a href="contact.html">Contact</a>
+                <button class="login-btn">Login</button>
+                <div class="language-selector">
+                    <select id="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="hi">हिंदी</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="eligibility-hero">
+            <h1 data-lang="checkEligibilityTitle">पात्रता जांचें</h1>
+            <p data-lang="checkEligibilityDesc">अपनी पात्रता की जांच करें और उपलब्ध सरकारी योजनाओं का लाभ उठाएं</p>
+        </section>
+
+        <section class="eligibility-container">
+            <div class="eligibility-form-container">
+                <h2 data-lang="fillDetails">अपने विवरण भरें</h2>
+                <form id="eligibilityForm">
+                    <div class="form-group">
+                        <label for="name" data-lang="fullName">पूरा नाम</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age" data-lang="age">उम्र</label>
+                            <input type="number" id="age" name="age" min="0" max="120" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender" data-lang="gender">लिंग</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" data-lang="select">चुनें</option>
+                                <option value="male" data-lang="male">पुरुष</option>
+                                <option value="female" data-lang="female">महिला</option>
+                                <option value="other" data-lang="other">अन्य</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category" data-lang="socialCategory">सामाजिक श्रेणी</label>
+                        <select id="category" name="category" required>
+                            <option value="" data-lang="select">चुनें</option>
+                            <option value="general" data-lang="general">सामान्य</option>
+                            <option value="obc" data-lang="obc">अन्य पिछड़ा वर्ग (OBC)</option>
+                            <option value="sc" data-lang="sc">अनुसूचित जाति (SC)</option>
+                            <option value="st" data-lang="st">अनुसूचित जनजाति (ST)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="annualIncome" data-lang="annualIncome">वार्षिक आय (रुपये में)</label>
+                        <input type="number" id="annualIncome" name="annualIncome" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="state" data-lang="state">राज्य</label>
+                            <select id="state" name="state" required>
+                                <option value="" data-lang="select">चुनें</option>
+                                <option value="UP" data-lang="up">उत्तर प्रदेश</option>
+                                <option value="Bihar" data-lang="bihar">बिहार</option>
+                                <option value="Delhi" data-lang="delhi">दिल्ली</option>
+                                <option value="Maharashtra" data-lang="maharashtra">महाराष्ट्र</option>
+                                <option value="Karnataka" data-lang="karnataka">कर्नाटक</option>
+                                <option value="TamilNadu" data-lang="tamilnadu">तमिलनाडु</option>
+                                <option value="Gujarat" data-lang="gujarat">गुजरात</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="district" data-lang="district">जिला</label>
+                            <input type="text" id="district" name="district" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label data-lang="areaType">आप किस क्षेत्र में रहते हैं?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="urban" name="area" value="urban" required>
+                            <label for="urban" data-lang="urban">शहरी</label>
+                            
+                            <input type="radio" id="rural" name="area" value="rural">
+                            <label for="rural" data-lang="rural">ग्रामीण</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label data-lang="categoryType">आप किस श्रेणी में आते हैं?</label>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="student" name="category_type" value="student">
+                                <label for="student" data-lang="student">विद्यार्थी</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="farmer" name="category_type" value="farmer">
+                                <label for="farmer" data-lang="farmer">किसान</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="women" name="category_type" value="women">
+                                <label for="women" data-lang="women">महिला</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="senior" name="category_type" value="senior">
+                                <label for="senior" data-lang="seniorCitizen">वरिष्ठ नागरिक</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="divyang" name="category_type" value="divyang">
+                                <label for="divyang" data-lang="disabled">दिव्यांग</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="unemployed" name="category_type" value="unemployed">
+                                <label for="unemployed" data-lang="unemployed">बेरोजगार</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" data-lang="checkEligibility">पात्रता जांचें</button>
+                </form>
+            </div>
+            
+            <div class="eligibility-results" id="eligibilityResults">
+                <div class="results-header">
+                    <h2 data-lang="eligibilityResults">आपकी पात्रता परिणाम</h2>
+                    <p data-lang="resultsDesc">आपके विवरण के आधार पर, आप निम्नलिखित योजनाओं के लिए पात्र हो सकते हैं:</p>
+                </div>
+                
+                <div class="results-container" id="resultsContainer">
+                    <!-- यहां जावास्क्रिप्ट द्वारा परिणाम जोड़े जाएंगे -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>The National Empowerment Scheme is dedicated to financial inclusion and skill development of the country's citizens. Through this initiative, we are moving towards a self-reliant India.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="eligibility.html">Eligibility</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Government Portals</h3>
+                <ul>
+                    <li><a href="https://www.india.gov.in/" target="_blank">India Government Portal</a></li>
+                    <li><a href="https://www.mygov.in/" target="_blank">MyGov India</a></li>
+                    <li><a href="https://digitalindia.gov.in/" target="_blank">Digital India</a></li>
+                    <li><a href="https://uidai.gov.in/" target="_blank">Aadhaar</a></li>
+                    <li><a href="https://www.makeinindia.com/" target="_blank">Make in India</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>National Empowerment Scheme Office,</p>
+                <p>Shram Shakti Bhawan, New Delhi - 110001</p>
+                <p>Email: support@yojanaportal.com</p>
+                <p>Phone: 1800-XXX-XXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Yojana Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="eligibility.js"></script>
+</body>
+</html> 

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Government Schemes - Yojana Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="assets/Government_of_India_logo.svg" alt="Government Logo" class="gov-logo">
+                <div class="logo-text">
+                    <h1>National Empowerment Scheme</h1>
+                    <p>Government of India Initiative</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                <li><a href="about.html" data-lang="nav-about">About</a></li>
+                <li><a href="eligibility.html" data-lang="nav-eligibility">Eligibility</a></li>
+                <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                <li><a href="#" class="login-btn" data-lang="nav-login">Login</a></li>
+            </ul>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <h1 data-lang="about-title">About Government Schemes</h1>
+            <p data-lang="about-description">Discover comprehensive information about various government initiatives and welfare programs designed to support citizens across different sectors.</p>
+        </section>
+
+        <section class="schemes-grid">
+            <div class="scheme-card" data-category="education">
+                <div class="scheme-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 data-lang="education-title">Education Schemes</h3>
+                <p class="scheme-intro" data-lang="educationIntro">Education schemes focus on providing quality education and financial support to students. These initiatives aim to make education accessible to all sections of society.</p>
+                <ul>
+                    <li>
+                        <h4 data-lang="scholarship-title">Scholarship Programs</h4>
+                        <p data-lang="scholarship-desc">Financial assistance for meritorious students from economically weaker sections.</p>
+                    </li>
+                    <li>
+                        <h4 data-lang="loan-title">Education Loans</h4>
+                        <p data-lang="loan-desc">Low-interest loans for higher education with flexible repayment options.</p>
+                    </li>
+                </ul>
+                <a href="eligibility.html#education" class="learn-more" data-lang="learn-more">Learn More</a>
+            </div>
+
+            <div class="scheme-card" data-category="agriculture">
+                <div class="scheme-icon">
+                    <i class="fas fa-tractor"></i>
+                </div>
+                <h3 data-lang="agriculture-title">Agriculture Schemes</h3>
+                <p class="scheme-intro" data-lang="agricultureIntro">Agriculture schemes support farmers with modern farming techniques, financial assistance, and crop insurance. These initiatives aim to boost agricultural productivity and farmer income.</p>
+                <ul>
+                    <li>
+                        <h4 data-lang="insurance-title">Crop Insurance</h4>
+                        <p data-lang="insurance-desc">Protection against crop damage due to natural calamities.</p>
+                    </li>
+                    <li>
+                        <h4 data-lang="subsidy-title">Subsidy Programs</h4>
+                        <p data-lang="subsidy-desc">Financial support for seeds, fertilizers, and equipment.</p>
+                    </li>
+                </ul>
+                <a href="eligibility.html#agriculture" class="learn-more" data-lang="learn-more">Learn More</a>
+            </div>
+
+            <div class="scheme-card" data-category="health">
+                <div class="scheme-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3 data-lang="health-title">Health Schemes</h3>
+                <p class="scheme-intro" data-lang="healthIntro">Health schemes provide affordable healthcare services and insurance coverage to citizens. These initiatives focus on making quality healthcare accessible to all sections of society.</p>
+                <ul>
+                    <li>
+                        <h4 data-lang="insurance-title">Health Insurance</h4>
+                        <p data-lang="insurance-desc">Comprehensive health coverage for medical expenses.</p>
+                    </li>
+                    <li>
+                        <h4 data-lang="medicine-title">Medicine Subsidies</h4>
+                        <p data-lang="medicine-desc">Affordable medicines for chronic diseases.</p>
+                    </li>
+                </ul>
+                <a href="eligibility.html#health" class="learn-more" data-lang="learn-more">Learn More</a>
+            </div>
+
+            <div class="scheme-card" data-category="housing">
+                <div class="scheme-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 data-lang="housing-title">Housing Schemes</h3>
+                <p class="scheme-intro" data-lang="housingIntro">Housing schemes aim to provide affordable housing solutions to citizens. These initiatives focus on making quality housing accessible to all sections of society.</p>
+                <ul>
+                    <li>
+                        <h4 data-lang="loan-title">Home Loans</h4>
+                        <p data-lang="loan-desc">Subsidized interest rates for home construction.</p>
+                    </li>
+                    <li>
+                        <h4 data-lang="subsidy-title">Construction Subsidies</h4>
+                        <p data-lang="subsidy-desc">Financial assistance for house construction.</p>
+                    </li>
+                </ul>
+                <a href="eligibility.html#housing" class="learn-more" data-lang="learn-more">Learn More</a>
+            </div>
+
+            <div class="scheme-card" data-category="employment">
+                <div class="scheme-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 data-lang="employment-title">Employment Schemes</h3>
+                <p class="scheme-intro" data-lang="employmentIntro">Employment schemes focus on creating job opportunities and supporting entrepreneurship. These initiatives aim to boost employment and self-employment across various sectors.</p>
+                <ul>
+                    <li>
+                        <h4 data-lang="training-title">Skill Development</h4>
+                        <p data-lang="training-desc">Training programs for job market readiness.</p>
+                    </li>
+                    <li>
+                        <h4 data-lang="startup-title">Startup Support</h4>
+                        <p data-lang="startup-desc">Financial assistance for new businesses.</p>
+                    </li>
+                </ul>
+                <a href="eligibility.html#employment" class="learn-more" data-lang="learn-more">Learn More</a>
+            </div>
+
+            <div class="scheme-card" data-category="welfare">
+                <div class="scheme-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3 data-lang="welfare-title">Welfare Schemes</h3>
+                <p class="scheme-intro" data-lang="welfareIntro">Welfare schemes focus on supporting vulnerable sections of society. These initiatives aim to provide financial assistance and support to those in need.</p>
+                <ul>
+                    <li>
+                        <h4 data-lang="pension-title">Pension Programs</h4>
+                        <p data-lang="pension-desc">Monthly financial support for elderly citizens.</p>
+                    </li>
+                    <li>
+                        <h4 data-lang="disability-title">Disability Support</h4>
+                        <p data-lang="disability-desc">Assistance for differently-abled individuals.</p>
+                    </li>
+                </ul>
+                <a href="eligibility.html#welfare" class="learn-more" data-lang="learn-more">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang="footer-about">About Us</h3>
+                <p data-lang="footer-about-text">Yojana Portal is your one-stop destination for information about government schemes and welfare programs.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="footer-quick-links">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                    <li><a href="about.html" data-lang="nav-about">About</a></li>
+                    <li><a href="eligibility.html" data-lang="nav-eligibility">Eligibility</a></li>
+                    <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="footer-contact">Contact Us</h3>
+                <p data-lang="footer-email">Email: support@yojanaportal.com</p>
+                <p data-lang="footer-phone">Phone: 1800-XXX-XXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-lang="footer-copyright">&copy; 2024 Yojana Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="about.js"></script>
+</body>
+</html> 
